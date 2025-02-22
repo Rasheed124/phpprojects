@@ -61,7 +61,7 @@ include_once 'header.php';
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <h6>Use this only when you've created an appointment</h6>
+            <!-- <h6>Use this only when you've created an appointment</h6> -->
 
                 <form action="./auth/track-code-auth.php" method="post">
                     <div class="mb-3">
