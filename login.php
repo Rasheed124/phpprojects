@@ -57,10 +57,12 @@ include_once 'header.php';
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="extraLoginModalLabel">Login with Track Code</h5>
+                <h5 class="modal-title" id="extraLoginModalLabel">Login with Track Code </h5> 
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+            <h6>Use this only when you've created an appointment</h6>
+
                 <form action="./auth/track-code-auth.php" method="post">
                     <div class="mb-3">
                         <input type="text" class="form-control text-center" name="trackCode" placeholder="Enter Track Code" required>
