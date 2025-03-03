@@ -7,6 +7,8 @@ if ($_SESSION['id'] <= 0) {
     header('location: login.php');
 }
 
+
+
 $user_id = $_SESSION['id'];
 
 // get registered users

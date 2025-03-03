@@ -1,4 +1,12 @@
 <?php
+
+session_start();
+include_once('connect.php');
+
+if (isset($_SESSION['id'])) {
+    header('location: index.php');
+}
+
 // Header 
 include_once 'header.php';
 ?>

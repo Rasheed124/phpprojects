@@ -1,6 +1,12 @@
 <?php
 
+session_start();
 include 'connect.php';
+
+
+if (!isset($_SESSION['id']) || $_SESSION['id'] <= 0) {
+    header("Location: login.php");
+}
 
 // Header 
 include_once 'header.php';
