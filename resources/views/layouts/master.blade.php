@@ -106,11 +106,10 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/about') }}">About us</a></li>
+            <li><a href="{{ url('/service') }}">Services</a></li>
+   
           </ul>
         </div>
 
@@ -157,7 +156,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://rasheedtolulope.vercel.app/">Rasheed</a>
       </div>
     </div>
 
