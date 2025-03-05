@@ -7,10 +7,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('/', function () {
+Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/', function () {
+Route::get('/contact', function () {
     return view('contact');
 });

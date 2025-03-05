@@ -21,17 +21,14 @@
   <!-- Vendor CSS Files -->
   <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  {{-- <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet"> --}}
   <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
 
-
   <!-- Main CSS File -->
   <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
-
-
 
 </head>
 
@@ -65,29 +62,9 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">Home<br></a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="{{ url('/') }}" class="active">Home<br></a></li>
+            <li><a href="{{ url('/about') }}">About</a></li>
+            <li><a href="{{ url('/contact') }}">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -100,8 +77,8 @@
 
   </header>
 
+  {{-- MAIN BODY --}}
   @yield('content')
- 
 
   <footer id="footer" class="footer light-background">
 
@@ -188,16 +165,15 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  {{-- <div id="preloader"></div> --}}
-
+  {{-- <!-- Preloader -->
+  <div id="preloader"></div> --}}
 
 
 
     <!-- Vendor JS Files -->
     <script href="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}" > </script>
-    <script href="{{ asset('assets/vendor/php-email-form/validate.js') }}" > </script>
-    <script href="{{ asset('assets/vendor/aos/aos.js') }}" > </script>
+    <script href="{{ asset('assets/vendor/php-email-form/validate.js') }}"  > </script>
+    {{-- <script href="{{ asset('assets/vendor/aos/aos.js') }}" > </script> --}}
     <script href="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}" > </script>
     <script href="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}" > </script>
   
