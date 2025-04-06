@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- TITLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BODY FONT -->
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-header d-flex">
+        <div class="logo-header">
+          <a href="index.html" class="logo"> Forever </a>
+        </div>
+
+        <!-- Top Header -->
+        <div
+          class="top-main-header d-flex justify-content-between align-items-center w-100"
+        >
+          <nav class="navbar">
+            <div class="">
+              <form class="search-all">
+                <div class="input-icon-right">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search..."
+                  />
+                  <i class="bi bi-search"></i>
+                </div>
+              </form>
+            </div>
+          </nav>
+
+          <!-- Notification Icons and Profile -->
+          <div class="top-right-icons d-flex align-items-center">
+            <div class="icon-one">
+              <img src="./images/A.I.png" alt="" />
+            </div>
+            <div class="icon-two">
+              <img src="./images/openmoji_ticket.png" alt="" />
+              <span>364</span>
+            </div>
+
+            <div class="icon-three">
+              <i class="bi bi-question-circle"></i>
+            </div>
+
+            <div class="top-header-profile-img-container">
+              <img
+                src="./images/top-header-pic.jpeg"
+                class="rounded-circle"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="d-flex">
+          <!-- Sidebar -->
+          <div id="sidebar" class="sidebar p-3 position-relative">
+            <!-- Sidebar Toggle Button -->
+            <button id="sidebarToggle" class=" m-2">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="bi bi-house"></i> <span>Dashboard</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center"
+                  data-bs-toggle="collapse"
+                  href="#leadSearch"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="leadSearch"
+                >
+                  <div class="isListDropDown">
+                    <i class="bi bi-building"></i> <span>Lead Search</span>
+                  </div>
+                  <i class="bi bi-chevron-down toggle-arrow"></i>
+                </a>
+                <div class="collapse submenu ps-4" id="leadSearch">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="bi bi-search"></i> <span>Discover</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="bi bi-people"></i> <span>People</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="bi bi-building"></i> <span>Company</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="bi bi-list-ul"></i> <span>List</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link d-flex justify-content-between align-items-center"
+                  data-bs-toggle="collapse"
+                  href="#engagedMenu"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="engagedMenu"
+                >
+                  <div class="isListDropDown">
+                    <i class="bi bi-gear"></i> <span>Engage</span>
+                  </div>
+                  <i class="bi bi-chevron-down toggle-arrow"></i>
+                </a>
+                <div class="collapse submenu ps-4" id="engagedMenu">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="bi bi-envelope"></i> <span>Mails</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="bi bi-telephone"></i> <span>Calls</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="bi bi-person-lines-fill"></i>
+                        <span>Leads</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="bi bi-list-check"></i> <span>Tasks</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="bi bi-person"></i> <span>People</span></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="bi bi-gear"></i> <span>Settings</span></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link"
+                  ><i class="bi bi-bell"></i> <span>Notifications</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Main Content -->
+          <div id="main" class="main flex-grow-1">
+            <div class="topbar">
+              <input
+                type="text"
+                class="form-control w-25"
+                placeholder="Search..."
+              />
+              <div>
+                <i class="bi bi-bell me-3"></i>
+                <i
+                  class="bi bi-person-circle me-3"
+                  style="cursor: pointer"
+                  id="profileBtn"
+                ></i>
+                <span class="badge bg-warning text-dark">364</span>
+              </div>
+            </div>
+
+            <div class="content">
+              <h3>Hi Motun!</h3>
+              <div class="mb-3">
+                <button class="btn btn-purple me-2">Save to List</button>
+                <button class="btn btn-purple me-2">Save to Leads</button>
+                <button class="btn btn-purple">Find Email Address</button>
+              </div>
+
+              <div class="table-wrapper">
+                <table class="table table-bordered">
+                  <thead class="bg-purple text-white">
+                    <tr>
+                      <th><input type="checkbox" /></th>
+                      <th>Company</th>
+                      <th>Phone</th>
+                      <th>Email</th>
+                      <th>Industry</th>
+                      <th>Country</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Repeat rows -->
+                    <tr>
+                      <td><input type="checkbox" /></td>
+                      <td>Belvo Digital</td>
+                      <td>XXXXX XXXX</td>
+                      <td>belvo@digital.com</td>
+                      <td>Media</td>
+                      <td>Nigeria</td>
+                    </tr>
+                    <!-- Duplicate more as needed -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              magnam recusandae fuga ipsum suscipit perferendis repudiandae unde
+              earum dolor in incidunt facilis reprehenderit totam at fugiat,
+              doloribus eligendi ea. Ducimus iure similique voluptatem quibusdam
+              harum quo doloribus cupiditate illum molestias reprehenderit
+              explicabo ullam nemo, laborum culpa error ex. Rerum, in temporibus
+              delectus sed ipsa quibusdam. Eveniet rem amet atque ullam.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              magnam recusandae fuga ipsum suscipit perferendis repudiandae unde
+              earum dolor in incidunt facilis reprehenderit totam at fugiat,
+              doloribus eligendi ea. Ducimus iure similique voluptatem quibusdam
+              harum quo doloribus cupiditate illum molestias reprehenderit
+              explicabo ullam nemo, laborum culpa error ex. Rerum, in temporibus
+              delectus sed ipsa quibusdam. Eveniet rem amet atque ullam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boostrap style -->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

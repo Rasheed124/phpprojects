@@ -1,0 +1,248 @@
+:root {
+  --forever-bg-one-grad: #026767;
+  --forever-bg-two-grad: #008b8b;
+  --forever-white: #f5f4ff;
+  --forever-pink: #c6c08c;
+  ---ng-secondary-one: #ee5858;
+  ---ng-secondary-two: #f2f4f5;
+  ---ng-secondary-three: #5f6c72;
+  ---ng-secondary-four: #2c694226;
+  ---ng-secondary-five: #2da5f3;
+  ---ng-secondary-six: #2c69420d;
+  ---ng-secondary-seven: #fcea2b;
+  --bs-purple: #6f42c1;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--forever-bg-two-grad);
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+  padding: 13px 30px;
+  padding-right: 60px;
+  background: linear-gradient(
+    to left,
+    var(--forever-bg-two-grad),
+    var(--forever-bg-one-grad)
+  );
+}
+.main-header .logo-header {
+  width: 360px;
+  height: 55px;
+  line-height: 55px;
+  color: var(--forever-white);
+  z-index: 1001;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 1001;
+  display: inline-block;
+}
+.main-header .logo-header a.logo {
+  color: var(--forever-pink);
+  font-size: 25px;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* -------------TOP HEADER */
+.top-main-header form.search-all .form-control::placeholder {
+  color: #000;
+}
+.top-main-header form.search-all .input-icon-right {
+  position: relative;
+}
+.top-main-header form.search-all input {
+  padding-left: 50px;
+  border-radius: 30px !important;
+  width: 400px;
+}
+.top-main-header form.search-all .input-icon-right i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  pointer-events: none;
+}
+
+.top-main-header .top-header-profile-img {
+  width: 80px;
+  height: 80px;
+}
+.top-main-header .top-right-icons {
+  gap: 30px;
+}
+.top-main-header .top-right-icons .icon-one img {
+  width: 20px;
+  height: 20px;
+}
+.top-main-header .top-right-icons .icon-two span {
+  color: var(---ng-secondary-seven);
+  font-size: 17px;
+  font-weight: 500;
+}
+.top-main-header .top-right-icons .icon-three {
+  color: var(--forever-white);
+  font-size: 20px;
+}
+.top-main-header .top-header-profile-img-container {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.top-main-header .top-header-profile-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ----------------------------------  NAVMENU-------------------- */
+
+.nav-link {
+  color: #495057;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #f8f9fa;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.nav-link:active {
+  background-color: #e2e6ea;
+  color: #0a58ca;
+}
+
+.nav-link i {
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover i,
+.nav-link:focus i {
+  color: #0d6efd;
+}
+
+/* ------------------- MAIN CONTENT AREA */
+.main-content {
+  position: fixed;
+  top: 81px; /* Below the header */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.main-content .main {
+  height: 100vh;
+  padding: 20px;
+  width: 80%;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  background-color: var(--forever-white);
+  margin-right: 40px;
+  scroll-behavior: smooth;
+  /* Custom scrollbar styles */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: var(--forever-bg-one-grad); /* For Firefox */
+}
+
+.main-content .sidebar {
+  width: 250px;
+  min-height: 100vh;
+  display: block;
+  z-index: 1;
+  font-weight: 200;
+  background: linear-gradient(
+    to top,
+    var(--forever-bg-one-grad),
+    var(--forever-bg-two-grad)
+  );
+  background-size: cover;
+  background-position: center center;
+
+  box-shadow: 6px 1px 20px rgba(69, 65, 78, 0.1);
+  transition: width 0.4s ease;
+}
+
+.sidebar a {
+  color: var(--forever-white);
+}
+
+.toggle-arrow {
+  transition: transform 0.3s ease;
+}
+
+/* =======================TOGGLE BUTTON */
+
+#sidebarToggle{
+  position: absolute;
+  top: 20%;
+  right: -35px;
+  transform: translateY(-50%);
+  background: var(--forever-bg-one-grad);
+  border: none;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.collapse.show + .toggle-arrow,
+.nav-link[aria-expanded="true"] .toggle-arrow {
+  transform: rotate(180deg);
+}
+
+/*------------------------------------- Collapsed sidebar */
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar.collapsed .nav-link span,
+.sidebar.collapsed .nav-link[data-bs-toggle="collapse"] div + i {
+  display: none;
+}
+
+.sidebar.collapsed .nav-link {
+  justify-content: center;
+}
+
+.sidebar.collapsed div.submenu {
+  display: none !important;
+}
+
+.sidebar.collapsed .nav-link[data-bs-toggle="collapse"] div.isListDropDown i {
+  display: block;
+}
+.sidebar.collapsed  #sidebarToggle i{
+  transform: rotate(180deg);
+
+}
