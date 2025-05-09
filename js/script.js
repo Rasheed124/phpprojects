@@ -114,16 +114,16 @@ jQuery(document).ready(function ($) {
   });
 });
 
- document.addEventListener('DOMContentLoaded', function () {
-    const elements = document.querySelectorAll('.choices-select');
-    elements.forEach(el => {
-      new Choices(el, {
-        searchEnabled: false, // or true if you want search
-        itemSelectText: '',
-        shouldSort: false,
-      });
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(".choices-select");
+  elements.forEach((el) => {
+    new Choices(el, {
+      searchEnabled: false, // or true if you want search
+      itemSelectText: "",
+      shouldSort: false,
     });
   });
+});
 
 // Go to Top Button
 const goToTopBtn = document.getElementById("goToTopBtn");
@@ -142,3 +142,21 @@ goToTopBtn.addEventListener("click", function () {
 
 
 
+window.addEventListener("DOMContentLoaded", () => {
+  const pointer = document.getElementById("pointer-icon");
+
+  // Position the pointer near the "Drive to Location" button
+  const driveBtn = document.querySelector(".btn-sign");
+  if (driveBtn) {
+    const rect = driveBtn.getBoundingClientRect();
+    pointer.style.top = `${rect.top - 30 + window.scrollY}px`;
+    pointer.style.left = `${
+      rect.left + rect.width / 2 - 10 + window.scrollX
+    }px`;
+  }
+
+  // Hide the pointer after 5 seconds
+  setTimeout(() => {
+    pointer.classList.add("fade-out");
+  }, 5000);
+});
