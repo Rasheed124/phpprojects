@@ -6,9 +6,11 @@ body {
 
 .navbar-custom {
   background-color: #dede;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 30;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-custom button.navbar-toggler {
@@ -72,6 +74,7 @@ body {
   font-size: 2rem;
   animation: bounce 1s infinite;
   transition: opacity 0.5s ease-out;
+  display: none;
 }
 
 @keyframes bounce {
@@ -100,7 +103,8 @@ body {
 
 #intro-container {
   position: relative;
-  height: 75vh;
+  height: 120vh;
+  top: 75px;
 }
 
 .reservation-container {
@@ -126,9 +130,9 @@ body {
   outline: none !important;
 }
 
-.reservation-form .choices {
+/* .reservation-form .choices {
   width: 100%;
-}
+} */
 
 .reservation-container .heading-content {
   text-align: center;
@@ -153,7 +157,7 @@ body {
 .owl-carousel.banner-container .item,
 .bannerimage,
 .bannerimage img {
-  height: 75vh;
+  height: 120vh;
   width: 100%;
   object-fit: cover;
 }
@@ -262,6 +266,10 @@ body {
   width: 70px;
 }
 
+.intro-container .banner-container.owl-carousel .owl-nav button {
+  display: none;
+}
+
 /* Keyframes for zoom-in */
 @keyframes zoomIn {
   0% {
@@ -278,23 +286,11 @@ body {
 }
 /*=== Slider End ===*/
 
-@media screen and (min-width: 768px) {
-  /* #intro-container {
-    position: relative;
-    height: 75vh;
-  }
-
-  .banner-container,
-  .owl-carousel .item,
-  .bannerimage,
-  .bannerimage img {
-    height: 75vh;
-
-  } */
-}
-
 /* ===============Home About Section */
-
+#about-section {
+  position: relative;
+  top: 60px;
+}
 .section-title {
   padding: 0 1rem;
 }
@@ -400,12 +396,7 @@ body {
 .custom-nav button:hover {
   opacity: 1;
   background-color: #003366;
-}
-
-@media (max-width: 768px) {
-  .custom-nav {
-    display: none !important;
-  }
+  display: none;
 }
 
 /* ============================  FOOTER */
@@ -543,4 +534,262 @@ body {
 .whatsapp-float:hover {
   background-color: #20c659;
   transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  #intro-container {
+    height: 125vh;
+  }
+
+  .banner-container,
+  .owl-carousel.banner-container .item,
+  .bannerimage,
+  .bannerimage img {
+    height: 125vh;
+  }
+
+  .custom-nav {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navbar-custom {
+    position: sticky;
+  }
+
+  #intro-container {
+    top: 0px;
+  }
+
+  #about-section {
+    position: relative;
+    top: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-container .banner-container.owl-carousel .owl-nav button {
+    display: block;
+  }
+  .pointer-animation i {
+    display: block;
+  }
+
+  #intro-container {
+    height: 75vh;
+  }
+
+  .banner-container,
+  .owl-carousel.banner-container .item,
+  .bannerimage,
+  .bannerimage img {
+    height: 75vh;
+  }
+}
+
+/* =============================COntact Page */
+
+.rental-banner {
+  padding: 80px 0;
+  text-align: center;
+  background-image: url("../images/banner-3.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.rental-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 51, 102, 0.7);
+  z-index: 0;
+}
+
+.rental-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+.rental-banner-title {
+  font-family: cursive;
+  font-size: 3rem;
+  margin-bottom: 15px;
+  margin-top: 35px;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.breadcrumb-item.active {
+  color: #cc7a00;
+}
+
+/* ====================== Info area */
+
+.info-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  padding: 30px 30px;
+  height: 250px;
+  margin: 20px 0px;
+}
+
+.info-card-icon {
+  color: #fff;
+  margin-right: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #cc7a00;
+  align-self: self-start;
+}
+.info-card-icon i {
+  font-size: 20px;
+}
+
+.info-card-title {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.info-card-text {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* ================================ Map Section */
+
+.map-section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ============================================ Gallery Page */
+.gallery-section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.nav-tabs .nav-link {
+  color: #003366;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-right: 15px;
+  padding: 10px 50px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #cc7a00;
+  border-bottom: 2px solid #cc7a00;
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.gallery-item img {
+  height: 50vh;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  /* height: 100; */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Modal Styling */
+.modal-header {
+  text-align: center;
+}
+
+.modal-title {
+  color: #003366;
+  text-align: center;
+}
+
+.modal-dialog-centered {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.modal-content {
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modal-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 968px) {
+  .video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+  
 }

@@ -123,6 +123,22 @@ document.addEventListener("DOMContentLoaded", function () {
       shouldSort: false,
     });
   });
+
+  // Galley Page Image Effect
+  const imageModal = document.getElementById("imageModal");
+  imageModal.addEventListener("show.bs.modal", (event) => {
+  
+    const triggerElement = event.relatedTarget;
+  
+    const imageSrc = triggerElement.getAttribute("data-image");
+    const imageTitle = triggerElement.getAttribute("data-title");
+  
+    const modalTitle = imageModal.querySelector(".modal-title");
+    const modalImage = imageModal.querySelector(".modal-body img");
+
+    modalTitle.textContent = imageTitle;
+    modalImage.src = imageSrc;
+  });
 });
 
 // Go to Top Button
@@ -139,8 +155,6 @@ window.onscroll = function () {
 goToTopBtn.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
-
 
 window.addEventListener("DOMContentLoaded", () => {
   const pointer = document.getElementById("pointer-icon");
