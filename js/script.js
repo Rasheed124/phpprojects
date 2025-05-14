@@ -32,29 +32,24 @@ jQuery(document).ready(function ($) {
     slideTransition: "linear",
   });
 
-  const $carousel = $("#testimonial-carousel");
+$("#testimonial-carousel").owlCarousel({
+  items: 1,
+  margin: 20,
+  loop: true,
+  nav: true,
+  dots: false,
+  autoplay: true,
+  navText: [
+    '<i class="bi bi-chevron-left"></i>',
+    '<i class="bi bi-chevron-right"></i>'
+  ],
+  responsive: {
+    768: { items: 2 },
+    992: { items: 3 },
+  },
+});
 
-  $carousel.owlCarousel({
-    items: 1,
-    margin: 20,
-    loop: true,
-    nav: false,
-    dots: false,
-    autoplay: true,
 
-    responsive: {
-      768: { items: 2 },
-      992: { items: 3 },
-    },
-  });
-
-  $(".prev").click(function () {
-    $carousel.trigger("prev.owl.carousel");
-  });
-
-  $(".next").click(function () {
-    $carousel.trigger("next.owl.carousel");
-  });
 
   // Gallery - Slide Right
   var slideRight = $(".slide-right").owlCarousel({

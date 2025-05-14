@@ -179,7 +179,7 @@ body {
   z-index: 0;
 }
 
-.owl-carousel .owl-nav button {
+.intro-container .owl-carousel .owl-nav button {
   position: absolute;
   width: 150px;
   top: 0;
@@ -191,10 +191,10 @@ body {
   z-index: 999;
   cursor: pointer;
 }
-.carousel-control:hover {
+.intro-container .carousel-control:hover {
   background-color: none !important;
 }
-.owl-carousel .owl-nav button:before {
+.intro-container .owl-carousel .owl-nav button:before {
   content: "";
   position: absolute;
   display: block;
@@ -210,11 +210,11 @@ body {
   transition: all, 0.3s, cubic-bezier(0.55, 0, 0.1, 1) 1s ease-in-out;
 }
 
-.owl-carousel .owl-nav button.owl-prev {
+.intro-container .owl-carousel .owl-nav button.owl-prev {
   left: 0;
   background: none !important;
 }
-.owl-carousel .owl-nav button.owl-prev:before {
+.intro-container .owl-carousel .owl-nav button.owl-prev:before {
   border-top: 2px solid white;
   border-left: 2px solid white;
   left: 30px;
@@ -225,22 +225,22 @@ body {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.owl-carousel .owl-nav button.owl-prev:after {
+.intro-container .owl-carousel .owl-nav button.owl-prev:after {
   left: 200px;
 }
-.owl-carousel .owl-nav button.owl-prev:hover:before {
+.intro-container .owl-carousel .owl-nav button.owl-prev:hover:before {
   left: 70px;
 }
-.owl-carousel .owl-nav button.owl-prev:hover:after {
+.intro-container .owl-carousel .owl-nav button.owl-prev:hover:after {
   left: 0px;
   opacity: 1;
   width: 70px;
 }
-.owl-carousel .owl-nav button.owl-next {
+.intro-container .owl-carousel .owl-nav button.owl-next {
   right: 0;
   background: none !important;
 }
-.owl-carousel .owl-nav button.owl-next:before {
+.intro-container .owl-carousel .owl-nav button.owl-next:before {
   border-bottom: 2px solid white;
   border-right: 2px solid white;
   right: 30px;
@@ -251,13 +251,13 @@ body {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.owl-carousel .owl-nav button.owl-next:after {
+.intro-container .owl-carousel .owl-nav button.owl-next:after {
   right: 200px;
 }
-.owl-carousel .owl-nav button.owl-next:hover:before {
+.intro-container .owl-carousel .owl-nav button.owl-next:hover:before {
   right: 70px;
 }
-.owl-carousel .owl-nav button.owl-next:hover:after {
+.intro-container .owl-carousel .owl-nav button.owl-next:hover:after {
   right: 63px;
   opacity: 1;
   width: 70px;
@@ -377,7 +377,7 @@ body {
 }
 
 /* =========================Testimonial */
-.custom-nav {
+/* .custom-nav {
   z-index: 10;
 }
 .custom-nav button {
@@ -394,7 +394,41 @@ body {
   opacity: 1;
   background-color: #003366;
   display: none;
+} */
+
+#testimonial-carousel.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 10;
+  display: none;
 }
+
+#testimonial-carousel.owl-carousel .owl-nav button.owl-prev,
+#testimonial-carousel.owl-carousel .owl-nav button.owl-next {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #000;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  pointer-events: all;
+}
+
+#testimonial-carousel.owl-carousel .owl-nav button.owl-prev:hover,
+#testimonial-carousel.owl-carousel .owl-nav button.owl-next:hover {
+  color: #ffffff;
+    background-color: #003366;
+}
+
 
 /* ============================  FOOTER */
 
@@ -734,19 +768,23 @@ body {
 
 @media (min-width: 768px) {
   #intro-container {
-    height: 125vh;
+    height: 120vh;
   }
 
   .banner-container,
   .owl-carousel.banner-container .item,
   .bannerimage,
   .bannerimage img {
-    height: 125vh;
+    height: 120vh;
   }
 
   .custom-nav {
     display: flex !important;
   }
+
+#testimonial-carousel.owl-carousel .owl-nav {
+  display: flex;
+}
 }
 
 @media screen and (min-width: 968px) {
