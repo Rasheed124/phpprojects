@@ -32,24 +32,22 @@ jQuery(document).ready(function ($) {
     slideTransition: "linear",
   });
 
-$("#testimonial-carousel").owlCarousel({
-  items: 1,
-  margin: 20,
-  loop: true,
-  nav: true,
-  dots: false,
-  autoplay: true,
-  navText: [
-    '<i class="bi bi-chevron-left"></i>',
-    '<i class="bi bi-chevron-right"></i>'
-  ],
-  responsive: {
-    768: { items: 2 },
-    992: { items: 3 },
-  },
-});
-
-
+  $("#testimonial-carousel").owlCarousel({
+    items: 1,
+    margin: 20,
+    loop: true,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    navText: [
+      '<i class="bi bi-chevron-left"></i>',
+      '<i class="bi bi-chevron-right"></i>',
+    ],
+    responsive: {
+      768: { items: 2 },
+      992: { items: 3 },
+    },
+  });
 
   // Gallery - Slide Right
   var slideRight = $(".slide-right").owlCarousel({
@@ -68,6 +66,8 @@ $("#testimonial-carousel").owlCarousel({
       0: { items: 1 },
       576: { items: 2 },
       768: { items: 3 },
+      992: { items: 3 }, // for desktops
+      1200: { items: 3}, // extra large screens
     },
   });
 
@@ -86,9 +86,9 @@ $("#testimonial-carousel").owlCarousel({
       0: { items: 1 },
       576: { items: 2 },
       768: { items: 3 },
+      992: { items: 3 }, // for desktops
+      1200: { items: 3 }, // extra large screens
     },
-
-    // Testimonial slider
   });
 
   // Trigger refresh on resize to prevent layout scatter
@@ -111,15 +111,6 @@ const lightbox = GLightbox({
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const elements = document.querySelectorAll(".choices-select");
-  elements.forEach((el) => {
-    new Choices(el, {
-      searchEnabled: false, // or true if you want search
-      itemSelectText: "",
-      shouldSort: false,
-    });
-  });
-
   // Galley Page Image Effect
   const imageModal = document.getElementById("imageModal");
   imageModal.addEventListener("show.bs.modal", (event) => {
