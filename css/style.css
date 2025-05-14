@@ -431,10 +431,8 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
 }
-
-.footer-listing-image {
-  width: 80px;
-  height: 80px;
+.Listing img {
+  height: 70px;
   object-fit: cover;
 }
 
@@ -553,9 +551,6 @@ body {
 }
 
 @media (min-width: 1000px) {
-  .navbar-custom {
-    /* position: sticky; */
-  }
 
   #intro-container {
     top: 0px;
