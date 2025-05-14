@@ -60,21 +60,20 @@ body {
 }
 
 /* ============ Pointer animation */
-.pointer-animation i {
-  position: absolute;
-  top: 100px;
-  right: 16%;
-  font-size: 40px;
-  font-weight: bold;
-  color: #fff;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  padding: 6px;
-  background-color: #003366;
-  font-size: 2rem;
-  animation: bounce 1s infinite;
-  transition: opacity 0.5s ease-out;
+.pointer-animation{
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
   display: none;
+  z-index: 60;
+  transform: translateX(-40px);
+
+}
+.pointer-animation .box {
+  align-self: flex-end;
+
 }
 
 @keyframes bounce {
@@ -555,7 +554,7 @@ body {
 
 @media (min-width: 1000px) {
   .navbar-custom {
-    position: sticky;
+    /* position: sticky; */
   }
 
   #intro-container {
@@ -572,19 +571,33 @@ body {
   .intro-container .banner-container.owl-carousel .owl-nav button {
     display: block;
   }
-  .pointer-animation i {
+  .pointer-animation {
     display: block;
   }
 
   #intro-container {
-    height: 75vh;
+    height: 105vh;
   }
 
   .banner-container,
   .owl-carousel.banner-container .item,
   .bannerimage,
   .bannerimage img {
-    height: 75vh;
+    height: 105vh;
+  }
+}
+@media (min-width: 1440px) {
+
+
+  #intro-container {
+    height: 85vh;
+  }
+
+  .banner-container,
+  .owl-carousel.banner-container .item,
+  .bannerimage,
+  .bannerimage img {
+    height: 85vh;
   }
 }
 

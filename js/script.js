@@ -41,6 +41,7 @@ jQuery(document).ready(function ($) {
     nav: false,
     dots: false,
     autoplay: true,
+
     responsive: {
       768: { items: 2 },
       992: { items: 3 },
@@ -104,14 +105,14 @@ jQuery(document).ready(function ($) {
       slideLeft.trigger("refresh");
     }
   });
+});
 
-  // Gallery Lightbox
-  const lightbox = GLightbox({
-    selector: ".glightbox",
-    touchNavigation: true,
-    loop: true,
-    zoomable: true,
-  });
+// Gallery Lightbox
+const lightbox = GLightbox({
+  selector: ".glightbox",
+  touchNavigation: true,
+  loop: true,
+  zoomable: true,
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -127,12 +128,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Galley Page Image Effect
   const imageModal = document.getElementById("imageModal");
   imageModal.addEventListener("show.bs.modal", (event) => {
-  
     const triggerElement = event.relatedTarget;
-  
+
     const imageSrc = triggerElement.getAttribute("data-image");
     const imageTitle = triggerElement.getAttribute("data-title");
-  
+
     const modalTitle = imageModal.querySelector(".modal-title");
     const modalImage = imageModal.querySelector(".modal-body img");
 
@@ -172,5 +172,5 @@ window.addEventListener("DOMContentLoaded", () => {
   // Hide the pointer after 5 seconds
   setTimeout(() => {
     pointer.classList.add("fade-out");
-  }, 5000);
+  }, 9000);
 });
