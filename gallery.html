@@ -42,10 +42,18 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./images/rental-logo.webp" alt="" />
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
+            <span class="logo-text">
+              <span class="logo-j">J</span
+              ><span class="logo-apartment">.Apartment</span>
+            </span>
           </a>
+
+          <!-- Toggler -->
           <button
             class="navbar-toggler"
             type="button"
@@ -57,34 +65,28 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- Nav Links  -->
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-center"
             id="navbarNav"
           >
-            <ul class="navbar-nav nav-menu-list">
+            <ul class="navbar-nav nav-center-links">
               <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact </a>
+                <a class="nav-link" href="./contact.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./gallery.html">Gallery</a>
               </li>
+            </ul>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fas fa-comment icon"></i
-                ></a>
-              </li>
-              <li class="nav-item">
+            <!-- Social Icons  -->
+            <div class="nav-menu-list d-lg-flex">
+              <div class="d-flex gap-3 icon-list">
                 <a class="nav-link" href="https://facebook.com" target="_blank">
                   <i class="bi bi-facebook fs-5"></i>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com" target="_blank">
-                  <i class="bi bi-twitter-x fs-5"></i>
-                </a>
-              </li>
-              <li class="nav-item">
+
                 <a
                   class="nav-link"
                   href="https://instagram.com"
@@ -92,9 +94,8 @@
                 >
                   <i class="bi bi-instagram fs-5"></i>
                 </a>
-              </li>
-
-              <li class="nav-item">
+              </div>
+              <div>
                 <a
                   href="https://www.google.com/maps/dir/?api=1&destination=6.841767,3.613209"
                   target="_blank"
@@ -103,11 +104,12 @@
                 >
                   <i class="bi bi-geo-alt-fill me-1"></i> Drive to Location
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
+
       <!-- Pointer Animation Icon -->
       <div id="pointer-icon" class="pointer-animation">
         <div class="box">
@@ -123,7 +125,7 @@
           <h1 class="rental-banner-title">Gallery</h1>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
                 Gallery
               </li>
@@ -187,7 +189,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#imageModal"
                   data-image="./images/banner-1.jpeg"
-                  data-title="The Zenith Residences "
+                  data-title="J.Apartment 1"
                 >
                   <img src="./images/banner-1.jpeg" alt="Image 1" />
                 </div>
@@ -198,7 +200,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#imageModal"
                   data-image="./images/banner-2.jpeg"
-                  data-title="Aura Apartments"
+                  data-title="J.Apartment 2"
                 >
                   <img src="./images/banner-2.jpeg" alt="Image 2" />
                 </div>
@@ -208,8 +210,8 @@
                   class="gallery-item"
                   data-bs-toggle="modal"
                   data-bs-target="#imageModal"
-                  data-image="./images/banner-4.jpeg"
-                  data-title="Nexus Living"
+                  data-image="./images/banner-3.jpeg"
+                  data-title="J.Apartment 3"
                 >
                   <img src="./images/banner-3.jpeg" alt="Image 3" />
                 </div>
@@ -220,7 +222,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#imageModal"
                   data-image="./images/banner-4.jpeg"
-                  data-title="Emberstone Lofts"
+                  data-title="J.Apartment 4"
                 >
                   <img src="./images/banner-4.jpeg" alt="Image 4" />
                 </div>
@@ -230,10 +232,10 @@
                   class="gallery-item"
                   data-bs-toggle="modal"
                   data-bs-target="#imageModal"
-                  data-image="./images/banner-6.jpeg"
-                  data-title="Veridian Suites"
+                  data-image="./images/banner-5.jpeg"
+                  data-title="J.Apartment 5"
                 >
-                  <img src="./images/banner-5.jpeg" alt="Image 6" />
+                  <img src="./images/banner-5.jpeg" alt="Image 5" />
                 </div>
               </div>
               <div class="col">
@@ -242,9 +244,219 @@
                   data-bs-toggle="modal"
                   data-bs-target="#imageModal"
                   data-image="./images/banner-6.jpeg"
-                  data-title="The Obsidian Tower"
+                  data-title="J.Apartment 6"
                 >
                   <img src="./images/banner-6.jpeg" alt="Image 6" />
+                </div>
+              </div>
+
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-7.jpeg"
+                  data-title="J.Apartment 7"
+                >
+                  <img src="./images/banner-7.jpeg" alt="Image 7" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-8.jpeg"
+                  data-title="J.Apartment 8"
+                >
+                  <img src="./images/banner-8.jpeg" alt="Image 8" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-9.jpeg"
+                  data-title="J.Apartment 9"
+                >
+                  <img src="./images/banner-9.jpeg" alt="Image 9" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-10.jpeg"
+                  data-title="J.Apartment 10"
+                >
+                  <img src="./images/banner-10.jpeg" alt="Image 10" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-11.jpeg"
+                  data-title="J.Apartment 11"
+                >
+                  <img src="./images/banner-11.jpeg" alt="Image 11" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-12.jpeg"
+                  data-title="J.Apartment 12"
+                >
+                  <img src="./images/banner-12.jpeg" alt="Image 12" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-13.jpeg"
+                  data-title="J.Apartment 13"
+                >
+                  <img src="./images/banner-13.jpeg" alt="Image 13" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-14.jpeg"
+                  data-title="J.Apartment 14"
+                >
+                  <img src="./images/banner-14.jpeg" alt="Image 14" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-15.jpeg"
+                  data-title="J.Apartment 15"
+                >
+                  <img src="./images/banner-15.jpeg" alt="Image 15" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-16.jpeg"
+                  data-title="J.Apartment 16"
+                >
+                  <img src="./images/banner-16.jpeg" alt="Image 16" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-17.jpeg"
+                  data-title="J.Apartment 17"
+                >
+                  <img src="./images/banner-17.jpeg" alt="Image 17" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-18.jpeg"
+                  data-title="J.Apartment 18"
+                >
+                  <img src="./images/banner-18.jpeg" alt="Image 18" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-19.jpeg"
+                  data-title="J.Apartment 19"
+                >
+                  <img src="./images/banner-19.jpeg" alt="Image 19" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-20.jpeg"
+                  data-title="J.Apartment 20"
+                >
+                  <img src="./images/banner-20.jpeg" alt="Image 20" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-21.jpeg"
+                  data-title="J.Apartment 21"
+                >
+                  <img src="./images/banner-21.jpeg" alt="Image 21" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-22.jpeg"
+                  data-title="J.Apartment 22"
+                >
+                  <img src="./images/banner-22.jpeg" alt="Image 22" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-23.jpeg"
+                  data-title="J.Apartment 23"
+                >
+                  <img src="./images/banner-23.jpeg" alt="Image 23" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-24.jpeg"
+                  data-title="J.Apartment 24"
+                >
+                  <img src="./images/banner-24.jpeg" alt="Image 24" />
+                </div>
+              </div>
+              <div class="col">
+                <div
+                  class="gallery-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
+                  data-image="./images/banner-25.jpeg"
+                  data-title="J.Apartment 25"
+                >
+                  <img src="./images/banner-25.jpeg" alt="Image 25" />
                 </div>
               </div>
             </div>
@@ -259,10 +471,13 @@
               <div class="col">
                 <div class="gallery-item video-container">
                   <iframe
-                    src="https://www.youtube.com/embed/jhwlckLGlG4"
-                    title="Video 1"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/wgsqJp2D5BE?si=zad1aQInJ1rA54Nv"
+                    title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -270,10 +485,13 @@
               <div class="col">
                 <div class="gallery-item video-container">
                   <iframe
-                    src="https://www.youtube.com/embed/jhwlckLGlG4"
-                    title="Video 1"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/wgsqJp2D5BE?si=zad1aQInJ1rA54Nv"
+                    title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -314,14 +532,19 @@
       <div class="container">
         <div class="row text-md-start g-10">
           <div class="col-lg-4 col-md-6 mb-4">
-            <img
-              src="./images/rental-logo.webp"
-              alt="Logo"
-              class="mb-3 footer-logo"
-            />
-            <p class="footer-about-text">
-              Discover premium rentals in Sagamu with unparalleled service and
-              luxurious experiences crafted just for you.
+            <!-- Logo -->
+            <a
+              class="navbar-brand d-flex align-items-center"
+              href="./index.html"
+            >
+              <span class="logo-text">
+                <span class="logo-j">J</span
+                ><span class="logo-apartment">.Apartment</span>
+              </span>
+            </a>
+            <p class="footer-about-text m">
+              Premium shortlet apartments designed to give you the perfect blend
+              of luxury, comfort, and convenience.
             </p>
             <div class="mt-3">
               <a href="#" class="footer-social-icon"
@@ -344,15 +567,11 @@
             <ul class="list-unstyled">
               <li class="mb-2 footer-contact-info">
                 <i class="bi bi-telephone-fill me-2 footer-contact-icon"></i>
-                +234 812 345 6789
+                +1 (646) 267-5712
               </li>
               <li class="mb-2 footer-contact-info">
                 <i class="bi bi-envelope-fill me-2 footer-contact-icon"></i>
-                info@yourdomain.com
-              </li>
-              <li class="footer-contact-info">
-                <i class="bi bi-globe me-2 footer-contact-icon"></i>
-                www.yourwebsite.com
+                info@johnsonluxurystay.com
               </li>
             </ul>
             <h5 class="footer-heading mt-4">Our Address</h5>

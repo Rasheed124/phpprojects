@@ -41,10 +41,18 @@
   <body id="contact">
     <header>
       <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container">
-          <a class="navbar-brand" href="./index.html">
-            <img src="./images/rental-logo.webp" alt="" />
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
+            <span class="logo-text">
+              <span class="logo-j">J</span
+              ><span class="logo-apartment">.Apartment</span>
+            </span>
           </a>
+
+          <!-- Toggler -->
           <button
             class="navbar-toggler"
             type="button"
@@ -56,34 +64,28 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- Nav Links  -->
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-center"
             id="navbarNav"
           >
-            <ul class="navbar-nav nav-menu-list">
+            <ul class="navbar-nav nav-center-links">
               <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact </a>
+                <a class="nav-link" href="./contact.html">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./gallery.html">Gallery</a>
               </li>
+            </ul>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fas fa-comment icon"></i
-                ></a>
-              </li>
-              <li class="nav-item">
+            <!-- Social Icons  -->
+            <div class="nav-menu-list d-lg-flex">
+              <div class="d-flex gap-3 icon-list">
                 <a class="nav-link" href="https://facebook.com" target="_blank">
                   <i class="bi bi-facebook fs-5"></i>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://twitter.com" target="_blank">
-                  <i class="bi bi-twitter-x fs-5"></i>
-                </a>
-              </li>
-              <li class="nav-item">
+
                 <a
                   class="nav-link"
                   href="https://instagram.com"
@@ -91,9 +93,8 @@
                 >
                   <i class="bi bi-instagram fs-5"></i>
                 </a>
-              </li>
-
-              <li class="nav-item">
+              </div>
+              <div>
                 <a
                   href="https://www.google.com/maps/dir/?api=1&destination=6.841767,3.613209"
                   target="_blank"
@@ -102,11 +103,12 @@
                 >
                   <i class="bi bi-geo-alt-fill me-1"></i> Drive to Location
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
+
       <!-- Pointer Animation Icon -->
       <div id="pointer-icon" class="pointer-animation">
         <div class="box">
@@ -122,7 +124,7 @@
           <h1 class="rental-banner-title">Contact</h1>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">
                 Contact
               </li>
@@ -150,7 +152,7 @@
 
                 <p class="info-card-text">
                   <strong>Email:</strong><br />
-                  info@example.com
+                info@johnsonluxurystay.com
                 </p>
               </div>
             </div>
@@ -181,15 +183,7 @@
                 <h2 class="info-card-title">Hours</h2>
                 <p class="info-card-text">
                   <strong>Monday - Friday:</strong><br />
-                  9:00 AM - 5:00 PM WAT
-                </p>
-                <p class="info-card-text">
-                  <strong>Saturday:</strong><br />
-                  10:00 AM - 2:00 PM WAT
-                </p>
-                <p class="info-card-text">
-                  <strong>Sunday:</strong>
-                  Closed
+                  Available 24 hours
                 </p>
               </div>
             </div>
@@ -229,14 +223,18 @@
       <div class="container">
         <div class="row text-md-start g-10">
           <div class="col-lg-4 col-md-6 mb-4">
-            <img
-              src="./images/rental-logo.webp"
-              alt="Logo"
-              class="mb-3 footer-logo"
-            />
+            <!-- Logo -->
+            <a
+              class="navbar-brand d-flex align-items-center"
+              href="./index.html"
+            >
+              <span class="logo-text">
+                <span class="logo-j">J</span
+                ><span class="logo-apartment">.Apartment</span>
+              </span>
+            </a>
             <p class="footer-about-text">
-              Discover premium rentals in Sagamu with unparalleled service and
-              luxurious experiences crafted just for you.
+           Premium shortlet apartments designed to give you the perfect blend of luxury, comfort, and convenience.
             </p>
             <div class="mt-3">
               <a href="#" class="footer-social-icon"
@@ -259,16 +257,13 @@
             <ul class="list-unstyled">
               <li class="mb-2 footer-contact-info">
                 <i class="bi bi-telephone-fill me-2 footer-contact-icon"></i>
-                +234 812 345 6789
+               +1 (646) 267-5712
               </li>
               <li class="mb-2 footer-contact-info">
                 <i class="bi bi-envelope-fill me-2 footer-contact-icon"></i>
-                info@yourdomain.com
+              info@johnsonluxurystay.com
               </li>
-              <li class="footer-contact-info">
-                <i class="bi bi-globe me-2 footer-contact-icon"></i>
-                www.yourwebsite.com
-              </li>
+           
             </ul>
             <h5 class="footer-heading mt-4">Our Address</h5>
             <p class="footer-address">

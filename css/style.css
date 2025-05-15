@@ -5,7 +5,7 @@ body {
 /* #003366 and  #cc7a00. */
 
 .navbar-custom {
-  background-color: #dede;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -27,6 +27,26 @@ body {
   font-weight: bold;
 }
 
+.nav-center-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.logo-j {
+  color: #cc7a00; 
+}
+
+.logo-apartment {
+  color: #003366;
+}
+
 .navbar-nav .nav-link {
   color: #003366;
   transition: background-color 0.3s ease;
@@ -36,11 +56,25 @@ body {
 
 .navbar-nav .nav-link:hover {
   color: #cc7a00;
+  transition: 500ms ease-in;
 }
 .nav-menu-list {
-  padding: 20px 0px;
+  padding: 10px 0px;
   justify-content: center;
   align-items: center;
+}
+.nav-menu-list .icon-list{
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.nav-menu-list  a:not(.btn-sign) i{
+  color: #003366;
+}
+.nav-menu-list  a i:hover{
+ color: #cc7a00;
+  transition: 500ms ease-in;
+  
 }
 .btn-sign {
   background-color: #cc7a00;
@@ -101,7 +135,7 @@ body {
 #intro-container {
   position: relative;
   height: 120vh;
-  top: 75px;
+  top: 60px;
 }
 
 .reservation-container {
@@ -117,7 +151,7 @@ body {
   padding: 2rem;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+box-shadow: -6px 17px 15px 16px rgba(0,0,0,0.1);
   width: 100%;
   margin-top: 20px;
 }
@@ -127,9 +161,7 @@ body {
   outline: none !important;
 }
 
-/* .reservation-form .choices {
-  width: 100%;
-} */
+
 
 .reservation-container .heading-content {
   text-align: center;
@@ -290,6 +322,7 @@ body {
 }
 .section-title {
   padding: 0 1rem;
+  color: #003366;
 }
 
 .line-top,
@@ -416,7 +449,7 @@ body {
 /* ============================  FOOTER */
 
 .custom-footer {
-  background-color: #dede !important;
+  background-color: #fff;
   padding: 40px 0;
 }
 
@@ -425,7 +458,6 @@ body {
 }
 
 .footer-about-text {
-  color: #555;
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -452,7 +484,6 @@ body {
 }
 
 .footer-listing-title {
-  color: #333;
   font-size: 0.9rem;
   font-weight: bold;
   margin-bottom: 5px;
@@ -460,13 +491,12 @@ body {
 
 .footer-listing-location,
 .footer-listing-price {
-  color: #777;
   font-size: 0.8rem;
   margin-bottom: 3px;
 }
 
 .footer-contact-info {
-  color: #003366;
+  /* color: #003366; */
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -479,7 +509,7 @@ body {
 }
 
 .footer-address {
-  color: #555;
+  /* color: #555; */
   line-height: 1.6;
 }
 
@@ -793,6 +823,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .nav-menu-list .icon-list{
+  margin-left: 20px;
+  margin-bottom: 0px;
+}
   .intro-container .banner-container.owl-carousel .owl-nav button {
     display: block;
   }
